@@ -86,7 +86,7 @@ public class BaseClass {
    public void logoutofApp() throws Throwable
    {
 	  
-	   wLib.wait(33);
+	   
 	  System.out.println("signout successfull");
    }
    @AfterClass(groups= {"smoketest","regression"})
