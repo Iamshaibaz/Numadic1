@@ -52,11 +52,23 @@ public class Tc1 extends BaseClass {
 		qapg.getImInterestedBtn().click();
 		
 		
+		//Validating Form 
 		
+		String firstname = eLib.getExelData("Sheet2",1 ,0 );
+		String lastname = eLib.getExelData("Sheet2",1 ,1);
+		String email = eLib.getExelData("Sheet2",1 ,2 );
+		String mobile = eLib.getExelData("Sheet2",1 ,3 );
+		String currentemployer = eLib.getExelData("Sheet2",1 ,9 );
+		String skillset = eLib.getExelData("Sheet2",1 ,11 );
+		String currentctc = eLib.getExelData("Sheet2",1 ,12 );
+		String expectedctc = eLib.getExelData("Sheet2",1 ,13 );
+		String reasonforchange = eLib.getExelData("Sheet2",1 ,14 );
+		String whyjoinnumadic = eLib.getExelData("Sheet2",1 ,15 );
+		String linkedin = eLib.getExelData("Sheet2",1 ,16 );
 		
+		qapg.sendingFormDetails(firstname, lastname, email, mobile, currentemployer, skillset, currentctc, expectedctc, reasonforchange, whyjoinnumadic, linkedin);
 	
 		
-	
 	}
 
 }
