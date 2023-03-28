@@ -26,7 +26,7 @@ public class Tc1 extends BaseClass {
 		String actualJoinOurCrew = hmpg.getJoinOurCrewText().getText();
 		String expectJoinOurCrew = eLib.getExelData("Sheet1",2 ,3 );
 		Assert.assertEquals(expectJoinOurCrew, actualJoinOurCrew);
-	  
+	  //add
 		//Click on ALL Button
 		hmpg.getAllBtn().click();
 	 
